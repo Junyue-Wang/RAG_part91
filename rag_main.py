@@ -9,7 +9,6 @@ COLLECTION_NAME = "cfr_part_91"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def search_chunks(question, db_folder=DEFAULT_DB_FOLDER, top_k=4):
-    """Search the Chroma vector database with an embedded question."""
     import chromadb
     from chromadb.utils.embedding_functions import ONNXMiniLM_L6_V2
 
