@@ -39,7 +39,6 @@ def find_part_91_pdf(source_folder):
 
 
 def read_pdf_chunks(pdf_file):
-    """Extract chunks and page metadata from the Part 91 PDF."""
     import pymupdf
 
     chunks = []
