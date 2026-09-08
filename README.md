@@ -36,10 +36,6 @@ The first run downloads Chroma's local MiniLM embedding model into `.model_cache
 The resulting vector database is saved in `chroma_db/`. Both folders are ignored
 by Git because they can be rebuilt.
 
-With the current Part 91 PDF, the script creates 932 embedded chunks.
-
-The script deliberately selects only files matching:
-
 ```text
 14 CFR Part 91*.pdf
 ```
