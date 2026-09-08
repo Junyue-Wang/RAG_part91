@@ -3,7 +3,7 @@ Part 91 RAG
 This is a small RAG built from one real PDF:
 
 ```text
-../source/14 CFR Part 91 (up to date as of 9-03-2026).pdf
+../source/14 CFR Part 91.pdf
 ```
 
 
@@ -26,15 +26,6 @@ Part 91 PDF
 python -m pip install -r requirements.txt
 ```
 
-## Build the vector database
-
-```bash
-python build_index.py
-```
-
-The first run downloads Chroma's local MiniLM embedding model into `.model_cache/`.
-The resulting vector database is saved in `chroma_db/`.
-
 ```text
 14 CFR Part 91*.pdf
 ```
@@ -42,12 +33,6 @@ The resulting vector database is saved in `chroma_db/`.
 ## Generate an answer
 
 ```bash
-export OPENAI_API_KEY="your-key"
-export OPENAI_CHAT_MODEL="gpt-5-mini"
 
-python rag_main.py "What preflight information is required by 91.103?" --openai
+python rag_main.py "What preflight information is required by part 91?" --openai
 ```
-
-The default `--top-k` value is 4. Page numbers are physical PDF pages and can be
-different from page numbers printed inside the document.
-
