@@ -44,14 +44,6 @@ The script deliberately selects only files matching:
 14 CFR Part 91*.pdf
 ```
 
-## Test retrieval
-
-```bash
-python rag_main.py "What preflight information is required by 91.103?" --show-context
-```
-
-`distance` is the Chroma cosine distance. Smaller values are better matches.
-
 ## Generate an answer
 
 ```bash
