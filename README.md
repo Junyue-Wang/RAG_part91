@@ -1,4 +1,4 @@
-# Project 1: Part 91 RAG
+Part 91 RAG
 
 This is a small RAG built from one real PDF:
 
