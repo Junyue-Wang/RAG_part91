@@ -33,8 +33,7 @@ python build_index.py
 ```
 
 The first run downloads Chroma's local MiniLM embedding model into `.model_cache/`.
-The resulting vector database is saved in `chroma_db/`. Both folders are ignored
-by Git because they can be rebuilt.
+The resulting vector database is saved in `chroma_db/`.
 
 ```text
 14 CFR Part 91*.pdf
